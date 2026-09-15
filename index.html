@@ -3,8 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TRUST Leadership Programme · Find the gap</title>
-<meta name="description" content="A 3-minute check to find exactly where the trust gap is in how you lead — and what closes it.">
+<title>Free TRUST Leadership Diagnostic | Beejuve</title>
+<meta name="description" content="Take Beejuve's free 3-minute TRUST Leadership Diagnostic to identify gaps in delegation, psychological safety, coaching culture and leadership transfer.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="Beejuve">
+<link rel="canonical" href="https://sherineleong-blip.github.io/trustleadership/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Beejuve">
+<meta property="og:title" content="Where is trust quietly breaking down in your leadership?">
+<meta property="og:description" content="Take the free 3-minute TRUST Leadership Diagnostic and identify the leadership gap that needs attention first.">
+<meta property="og:url" content="https://sherineleong-blip.github.io/trustleadership/">
+<meta property="og:image" content="https://sherineleong-blip.github.io/trustleadership/og-trust-leadership.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Beejuve TRUST Leadership Diagnostic">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Where is trust quietly breaking down in your leadership?">
+<meta name="twitter:description" content="Take the free 3-minute TRUST Leadership Diagnostic and find the leadership gap that needs attention first.">
+<meta name="twitter:image" content="https://sherineleong-blip.github.io/trustleadership/og-trust-leadership.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "TRUST Leadership Diagnostic",
+  "url": "https://sherineleong-blip.github.io/trustleadership/",
+  "description": "A free three-minute leadership diagnostic for managers, HR and organisational leaders to identify gaps across Transform, Release, Unmask, Safety and Transfer.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "MYR" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Beejuve",
+    "email": "enquiry@beejuve.com",
+    "telephone": "+60149303591"
+  }
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -506,8 +543,154 @@
     max-width:58ch;
   }
 
+  /* ---- Lead capture ---- */
+  .lead-intro{margin-bottom:24px;}
+  .lead-intro h2{
+    font-size:clamp(27px,4.5vw,36px);
+    line-height:1.18;
+    margin-bottom:12px;
+  }
+  .lead-intro p{
+    color:var(--ink-soft);
+    font-size:15px;
+    max-width:58ch;
+    margin:0;
+  }
+  .result-preview{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:12px;
+    margin:24px 0;
+  }
+  .preview-card{
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    background:var(--surface);
+    padding:18px 20px;
+  }
+  .preview-card .label{
+    display:block;
+    color:var(--ink-soft);
+    font-size:12px;
+    margin-bottom:4px;
+  }
+  .preview-card strong{
+    color:var(--navy-ink);
+    font-family:"Newsreader",serif;
+    font-size:22px;
+    font-weight:600;
+  }
+  .lead-form{
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    background:var(--surface);
+    padding:26px 28px;
+  }
+  .form-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:16px;
+  }
+  .form-field.full{grid-column:1/-1;}
+  .form-field label{
+    display:block;
+    color:var(--navy-ink);
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:6px;
+  }
+  .form-field input,
+  .form-field select{
+    width:100%;
+    min-height:46px;
+    border:1px solid #CFCBC2;
+    border-radius:8px;
+    background:#fff;
+    color:var(--ink);
+    font:inherit;
+    font-size:15px;
+    padding:10px 12px;
+  }
+  .form-field input:focus,
+  .form-field select:focus{
+    outline:3px solid rgba(184,134,11,.18);
+    border-color:var(--gold);
+  }
+  .check-row{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    margin-top:16px;
+    color:var(--ink-soft);
+    font-size:12.5px;
+  }
+  .check-row input{margin-top:3px; flex:0 0 auto;}
+  .privacy-note{
+    margin:18px 0;
+    padding:14px 16px;
+    background:#F3F1EB;
+    border-radius:8px;
+    color:var(--ink-soft);
+    font-size:12.5px;
+  }
+  .privacy-note summary{
+    cursor:pointer;
+    color:var(--navy-ink);
+    font-weight:600;
+  }
+  .privacy-note p{margin:8px 0 0;}
+  .form-actions{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    flex-wrap:wrap;
+    margin-top:20px;
+  }
+  .form-status{
+    min-height:20px;
+    margin-top:10px;
+    color:var(--flag);
+    font-size:13px;
+  }
+  .result-email-note{
+    display:none;
+    border-left:3px solid var(--gold);
+    background:#F3F1EB;
+    color:var(--ink-soft);
+    padding:12px 14px;
+    margin:0 0 26px;
+    font-size:13.5px;
+  }
+  .result-email-note.show{display:block;}
+  .share-tools{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:20px;
+  }
+  .share-tools span{
+    color:var(--ink-soft);
+    font-size:12.5px;
+    font-weight:600;
+  }
+  .share-link{
+    border:0;
+    background:transparent;
+    color:var(--navy);
+    font:inherit;
+    font-size:12.5px;
+    font-weight:600;
+    padding:4px 0;
+    cursor:pointer;
+    text-decoration:underline;
+    text-underline-offset:3px;
+  }
+  .share-confirm{color:var(--gold); font-size:12px; min-height:18px;}
+  .honeypot{position:absolute !important; left:-10000px !important; width:1px !important; height:1px !important; overflow:hidden !important;}
+
   @media print{
-    .nav-row, .track-choice, .cta-row, .btn, .meta-line{display:none !important;}
+    .nav-row, .track-choice, .cta-row, .btn, .meta-line, .share-tools, .result-email-note{display:none !important;}
     body{background:#fff;}
     .screen{display:none !important;}
     #screen-results.active{display:block !important;}
@@ -517,6 +700,8 @@
     .scale{grid-template-columns:repeat(5,1fr);}
     .scale label{font-size:10px; padding:9px 2px 8px;}
     .bar-row{grid-template-columns:110px 1fr 36px;}
+    .result-preview,.form-grid{grid-template-columns:1fr;}
+    .lead-form{padding:22px 20px;}
   }
 </style>
 </head>
@@ -536,7 +721,7 @@
       <p class="company-line">Beejuve — an HRDC-accredited leadership training company, built on the TRUST Framework.</p>
       <p class="kicker">A 3-minute gap check</p>
       <h1 class="headline">Find the gap that's quietly costing you your best people.</h1>
-      <p class="lede">Fifteen short statements, five-point scale. No email required to see where the gap sits — or what closes it.</p>
+      <p class="lede">Fifteen short statements, five-point scale. See your first insight immediately, then receive your complete personalised TRUST report by email.</p>
       <p class="tagline">"It's not about doing more. It's about trusting more."</p>
 
       <div class="track-choice">
@@ -551,6 +736,11 @@
       </div>
 
       <p class="meta-line">Score each statement against the last few weeks: 1 = strongly disagree · 5 = strongly agree.</p>
+      <div class="share-tools" aria-label="Share this diagnostic">
+        <span>Useful for another leader?</span>
+        <button class="share-link" type="button" onclick="shareDiagnostic()">Share this diagnostic</button>
+        <span class="share-confirm" id="intro-share-confirm" aria-live="polite"></span>
+      </div>
     </section>
 
     <!-- SCREEN 2: QUIZ -->
@@ -564,8 +754,87 @@
       <p class="warn" id="warn-msg">Please answer all three before moving on.</p>
     </section>
 
-    <!-- SCREEN 3: RESULTS -->
+    <!-- SCREEN 3: LEAD CAPTURE -->
+    <section class="screen" id="screen-lead">
+      <div class="lead-intro">
+        <p class="kicker">Your first insight</p>
+        <h2>Your TRUST leadership profile is ready.</h2>
+        <p>Here is the pattern that needs attention first. Enter your details to unlock the complete five-dimension report and receive a copy by email.</p>
+      </div>
+
+      <div class="result-preview" aria-label="Result preview">
+        <div class="preview-card">
+          <span class="label">Priority leadership gap</span>
+          <strong id="preview-gap">—</strong>
+        </div>
+        <div class="preview-card">
+          <span class="label">Current result band</span>
+          <strong id="preview-band">—</strong>
+        </div>
+      </div>
+
+      <form class="lead-form" id="lead-form" onsubmit="submitLead(event)">
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="lead-first-name">First name *</label>
+            <input id="lead-first-name" name="firstName" type="text" autocomplete="given-name" maxlength="60" required>
+          </div>
+          <div class="form-field">
+            <label for="lead-email">Work email *</label>
+            <input id="lead-email" name="email" type="email" autocomplete="email" maxlength="160" required>
+          </div>
+          <div class="form-field">
+            <label for="lead-organisation">Organisation *</label>
+            <input id="lead-organisation" name="organisation" type="text" autocomplete="organization" maxlength="120" required>
+          </div>
+          <div class="form-field">
+            <label for="lead-role">Role</label>
+            <input id="lead-role" name="role" type="text" autocomplete="organization-title" maxlength="100">
+          </div>
+          <div class="form-field">
+            <label for="lead-phone">Contact number</label>
+            <input id="lead-phone" name="phone" type="tel" autocomplete="tel" maxlength="40">
+          </div>
+          <div class="form-field">
+            <label for="lead-intent">What best describes you?</label>
+            <select id="lead-intent" name="intent">
+              <option value="Exploring for my organisation">Exploring for my organisation</option>
+              <option value="HR or L&D professional">HR or L&amp;D professional</option>
+              <option value="Personal leadership development">Personal leadership development</option>
+              <option value="Training or coaching partner">Training or coaching partner</option>
+            </select>
+          </div>
+          <div class="honeypot" aria-hidden="true">
+            <label for="lead-website">Website</label>
+            <input id="lead-website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+        </div>
+
+        <label class="check-row">
+          <input id="lead-results-consent" name="resultsConsent" type="checkbox" required>
+          <span>I agree to Beejuve using these details to generate, store and email my personalised diagnostic results. *</span>
+        </label>
+        <label class="check-row">
+          <input id="lead-marketing-consent" name="marketingConsent" type="checkbox">
+          <span>I would also like to receive leadership insights, programme information and invitations from Beejuve. Optional.</span>
+        </label>
+
+        <details class="privacy-note">
+          <summary>How Beejuve uses your information</summary>
+          <p>Beejuve uses your details and diagnostic scores to deliver your report and respond to relevant enquiries. Marketing updates are only sent when you select the optional box. You may request access, correction or deletion by emailing enquiry@beejuve.com. Individual results are not shared with an employer without permission.</p>
+        </details>
+
+        <div class="form-actions">
+          <button class="btn ghost" type="button" onclick="returnToQuiz()">← Review answers</button>
+          <button class="btn" id="lead-submit" type="submit">Show &amp; email my full results →</button>
+        </div>
+        <p class="form-status" id="lead-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <!-- SCREEN 4: RESULTS -->
     <section class="screen" id="screen-results">
+      <p class="result-email-note" id="result-email-note" role="status"></p>
       <div class="result-head">
         <p class="kicker" id="result-kicker">Your result</p>
         <div class="result-score" id="result-score">0<span>/75</span></div>
@@ -581,6 +850,14 @@
         <button class="btn ghost" onclick="retake()">Retake the check</button>
         <button class="btn ghost" onclick="window.print()">Save as PDF</button>
         <a class="btn" id="whatsapp-cta" href="#" target="_blank" rel="noopener">Book a 30-minute call →</a>
+      </div>
+
+      <div class="share-tools" aria-label="Share this diagnostic">
+        <span>Know another leader who may benefit?</span>
+        <button class="share-link" type="button" onclick="shareDiagnostic()">Share the diagnostic</button>
+        <a class="share-link" id="linkedin-share" href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="share-link" id="facebook-share" href="#" target="_blank" rel="noopener">Facebook</a>
+        <span class="share-confirm" id="result-share-confirm" aria-live="polite"></span>
       </div>
 
       <div class="positioning">
@@ -652,6 +929,12 @@
 </main>
 
 <script>
+const CONFIG = {
+  leadEndpoint: 'https://script.google.com/macros/s/AKfycbybzKut4WP2wH6S6LW7NahnwV6-mAL10rO3OqfNxaBFilO26hVbK4KcnZF_wqUOAZAN/exec',
+  diagnosticUrl: 'https://sherineleong-blip.github.io/trustleadership/',
+  landingPageUrl: 'https://beejuve-trust-leadership.sherineleong.chatgpt.site'
+};
+
 /* ---------- Data ---------- */
 const SHIFTS = [
   { key:'transform', letter:'T', name:'Transform', sub:'from doer to leader',
@@ -739,6 +1022,8 @@ const SCALE_LABELS = ["Strongly disagree","Disagree","Neutral","Agree","Strongly
 let track = null;
 let stepIndex = 0;
 let answers = {}; // answers[shiftKey] = [null,null,null]
+let currentResult = null;
+let leadProfile = null;
 
 function resetAnswers(){
   answers = {};
@@ -821,7 +1106,7 @@ function goNext(){
     stepIndex++;
     renderStep();
   } else {
-    showResults();
+    showLeadCapture();
   }
 }
 
@@ -835,6 +1120,10 @@ function goBack(){
 function retake(){
   track = null;
   stepIndex = 0;
+  currentResult = null;
+  leadProfile = null;
+  const form = document.getElementById('lead-form');
+  if(form) form.reset();
   showScreen('screen-intro');
 }
 
@@ -850,13 +1139,114 @@ function totalBand(total){
   return {label:'Urgent', text:"At this level, the gap is likely already losing people or momentum quietly."};
 }
 
-function showResults(){
+function calculateResult(){
   const scores = SHIFTS.map(s => ({...s, score: shiftScore(s.key)}));
   const total = scores.reduce((a,s) => a + s.score, 0);
   const primary = scores.reduce((max, s) => s.score > max.score ? s : max, scores[0]);
   const band = totalBand(total);
+  return {scores, total, primary, band};
+}
 
-  document.getElementById('result-kicker').textContent = track === 'manager' ? 'Your result' : "Your organisation's result";
+function showLeadCapture(){
+  currentResult = calculateResult();
+  document.getElementById('preview-gap').textContent = currentResult.primary.name;
+  document.getElementById('preview-band').textContent = currentResult.band.label;
+  document.getElementById('lead-status').textContent = '';
+  showScreen('screen-lead');
+}
+
+function returnToQuiz(){
+  stepIndex = SHIFTS.length - 1;
+  showScreen('screen-quiz');
+  renderStep();
+}
+
+function getCampaignData(){
+  const params = new URLSearchParams(window.location.search);
+  return {
+    utmSource: params.get('utm_source') || '',
+    utmMedium: params.get('utm_medium') || '',
+    utmCampaign: params.get('utm_campaign') || '',
+    utmContent: params.get('utm_content') || ''
+  };
+}
+
+function makeSubmissionId(){
+  if(window.crypto && typeof window.crypto.randomUUID === 'function') return window.crypto.randomUUID();
+  return `trust-${Date.now()}-${Math.random().toString(16).slice(2)}`;
+}
+
+async function submitLead(event){
+  event.preventDefault();
+  const form = event.currentTarget;
+  const status = document.getElementById('lead-status');
+  const submitButton = document.getElementById('lead-submit');
+
+  if(!form.reportValidity()) return;
+  if(!currentResult) currentResult = calculateResult();
+
+  if(!CONFIG.leadEndpoint){
+    status.textContent = 'Email delivery is being connected. Please try again shortly.';
+    return;
+  }
+
+  const formData = new FormData(form);
+  const campaign = getCampaignData();
+  const scoreMap = Object.fromEntries(currentResult.scores.map(s => [s.key, s.score]));
+  leadProfile = {
+    submissionId: makeSubmissionId(),
+    submittedAt: new Date().toISOString(),
+    firstName: String(formData.get('firstName') || '').trim(),
+    email: String(formData.get('email') || '').trim(),
+    organisation: String(formData.get('organisation') || '').trim(),
+    role: String(formData.get('role') || '').trim(),
+    phone: String(formData.get('phone') || '').trim(),
+    track,
+    intent: String(formData.get('intent') || ''),
+    overallScore: currentResult.total,
+    resultBand: currentResult.band.label,
+    primaryGap: currentResult.primary.name,
+    transform: scoreMap.transform,
+    release: scoreMap.release,
+    unmask: scoreMap.unmask,
+    safety: scoreMap.safety,
+    transfer: scoreMap.transfer,
+    recommendedProgramme: currentResult.primary.programme,
+    resultsConsent: formData.get('resultsConsent') === 'on' ? 'Yes' : 'No',
+    marketingConsent: formData.get('marketingConsent') === 'on' ? 'Yes' : 'No',
+    sourceUrl: window.location.href,
+    referrer: document.referrer || '',
+    website: String(formData.get('website') || ''),
+    ...campaign
+  };
+
+  submitButton.disabled = true;
+  submitButton.textContent = 'Preparing your report…';
+  status.textContent = '';
+
+  try{
+    const payload = new URLSearchParams();
+    Object.entries(leadProfile).forEach(([key,value]) => payload.append(key, String(value ?? '')));
+    await fetch(CONFIG.leadEndpoint, {
+      method:'POST',
+      mode:'no-cors',
+      body:payload
+    });
+    showResults();
+  }catch(error){
+    status.textContent = 'We could not send your report. Please check your connection and try again.';
+  }finally{
+    submitButton.disabled = false;
+    submitButton.textContent = 'Show & email my full results →';
+  }
+}
+
+function showResults(){
+  if(!currentResult) currentResult = calculateResult();
+  const {scores,total,primary,band} = currentResult;
+
+  const resultOwner = leadProfile?.firstName ? `${leadProfile.firstName}, your result` : (track === 'manager' ? 'Your result' : "Your organisation's result");
+  document.getElementById('result-kicker').textContent = resultOwner;
   document.getElementById('result-score').innerHTML = `${total}<span>/75</span>`;
   document.getElementById('result-band-label').textContent = band.label;
   document.getElementById('result-band-text').textContent = band.text;
@@ -884,8 +1274,60 @@ function showResults(){
   const waMsg = encodeURIComponent(`Hi Sherine, I just did the TRUST gap check (${primary.name} came out as my biggest gap, ${total}/75 overall) and I'd like to book a 30-minute call.`);
   document.getElementById('whatsapp-cta').href = `https://wa.me/60149303591?text=${waMsg}`;
 
+  const emailNote = document.getElementById('result-email-note');
+  if(leadProfile?.email){
+    emailNote.textContent = `Your personalised report has been sent to ${leadProfile.email}. Please check your spam or promotions folder if it does not arrive within a few minutes.`;
+    emailNote.classList.add('show');
+  } else {
+    emailNote.classList.remove('show');
+  }
+
   showScreen('screen-results');
 }
+
+/* ---------- Social sharing ---------- */
+function campaignShareUrl(network){
+  const url = new URL(CONFIG.diagnosticUrl);
+  url.searchParams.set('utm_source', network);
+  url.searchParams.set('utm_medium', 'social');
+  url.searchParams.set('utm_campaign', 'trust_diagnostic');
+  return url.toString();
+}
+
+function setShareConfirmation(message){
+  ['intro-share-confirm','result-share-confirm'].forEach(id => {
+    const el = document.getElementById(id);
+    if(el) el.textContent = message;
+  });
+}
+
+async function shareDiagnostic(){
+  const shareData = {
+    title:'TRUST Leadership Diagnostic',
+    text:'Where is trust quietly breaking down in your leadership? Take Beejuve\'s free 3-minute diagnostic.',
+    url:campaignShareUrl('direct_share')
+  };
+  try{
+    if(navigator.share){
+      await navigator.share(shareData);
+      setShareConfirmation('Shared');
+    } else {
+      await navigator.clipboard.writeText(shareData.url);
+      setShareConfirmation('Link copied');
+    }
+  }catch(error){
+    if(error?.name !== 'AbortError') setShareConfirmation('Copy the page link to share');
+  }
+}
+
+function initialiseShareLinks(){
+  const linkedin = document.getElementById('linkedin-share');
+  const facebook = document.getElementById('facebook-share');
+  if(linkedin) linkedin.href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(campaignShareUrl('linkedin'))}`;
+  if(facebook) facebook.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(campaignShareUrl('facebook'))}`;
+}
+
+initialiseShareLinks();
 </script>
 
 </body>
