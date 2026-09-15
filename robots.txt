@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sherineleong-blip.github.io/trustleadership/sitemap.xml
+
